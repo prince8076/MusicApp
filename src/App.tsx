@@ -1,7 +1,8 @@
 import { SafeAreaView, StatusBar, StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import React, {useState, useEffect} from 'react'
+import {setupPlayer} from "../musicPlayerServices"
 
-const App = () => {
+function App(): JSX.Element {
   return (
       <SafeAreaView>
         <StatusBar/>

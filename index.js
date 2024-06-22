@@ -7,4 +7,4 @@ import App from './src/App';
 import {name as appName} from './app.json';
 import { playbackService } from './musicPlayerServices';
 AppRegistry.registerComponent(appName, () => App);
-TrackPlayer.registerComponent(()=> playbackService);
+TrackPlayer.registerPlaybackService(() => playbackService);
